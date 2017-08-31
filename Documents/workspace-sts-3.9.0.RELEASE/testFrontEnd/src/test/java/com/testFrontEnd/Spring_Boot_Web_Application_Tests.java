@@ -22,13 +22,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.testFrontEnd.SpringBootWebApplication;
+import com.testFrontEnd.Spring_Boot_Web_Application;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = SpringBootWebApplication.class)
+@SpringBootTest(classes = Spring_Boot_Web_Application.class)
 @WebAppConfiguration
-public class SpringBootWebApplicationTests  {
+public class Spring_Boot_Web_Application_Tests  {
     
 
     @Test

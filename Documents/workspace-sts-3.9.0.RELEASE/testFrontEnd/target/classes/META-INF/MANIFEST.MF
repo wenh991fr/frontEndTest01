@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: Fabric8 :: Quickstarts :: Spring-Boot :: WebMVC
+Implementation-Title: Spring-Boot :: WebMVC
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: wenceslaofloresrodriguez
 Implementation-Vendor-Id: com.testFrontEnd
