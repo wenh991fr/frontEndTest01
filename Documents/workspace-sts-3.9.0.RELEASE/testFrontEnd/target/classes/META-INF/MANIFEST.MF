@@ -1,5 +1,11 @@
 Manifest-Version: 1.0
+Implementation-Title: Fabric8 :: Quickstarts :: Spring-Boot :: WebMVC
+Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: wenceslaofloresrodriguez
+Implementation-Vendor-Id: com.testFrontEnd
 Build-Jdk: 1.8.0_144
+Implementation-URL: http://projects.spring.io/spring-boot/testFrontEnd
+ /
 Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 

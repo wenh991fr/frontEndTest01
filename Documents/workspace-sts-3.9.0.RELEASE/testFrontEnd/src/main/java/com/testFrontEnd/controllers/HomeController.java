@@ -13,25 +13,21 @@
  *  implied.  See the License for the specific language governing
  *  permissions and limitations under the License.
  */
-package com.testFrontEnd.testFrontEnd;
+package com.testFrontEnd.controllers;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
+@RestController
+public class HomeController {
 
+    @Value("${welcome}")
+    private String welcome;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = SpringBootWebApplication.class)
-@WebAppConfiguration
-public class SpringBootWebApplicationTests  {
-    
-
-    @Test
-    public void contextLoads() throws InterruptedException {
-
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String ipaddress() throws Exception {
+        return "Reply: " + welcome;
     }
-
 }

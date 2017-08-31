@@ -13,22 +13,23 @@
  *  implied.  See the License for the specific language governing
  *  permissions and limitations under the License.
  */
-package com.testFrontEnd.testFrontEnd;
+package com.testFrontEnd.domain;
 
-import java.net.InetAddress;
+public class IPAddress {
 
-import com.testFrontEnd.testFrontEnd.domain.IPAddress;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+    private final long id;
+    private final String ipAddress;
 
-@RestController
-public class IPAddressController {
+    public IPAddress(long id, String ipAddress) {
+        this.id = id;
+        this.ipAddress = ipAddress;
+    }
 
-    private int counter;
+    public long getId() {
+        return id;
+    }
 
-    @RequestMapping(value = "/ip", method = RequestMethod.GET)
-    public IPAddress ipaddress() throws Exception {
-        return new IPAddress(++counter, InetAddress.getLocalHost().getHostAddress());
+    public String getIpAddress() {
+        return ipAddress;
     }
 }
